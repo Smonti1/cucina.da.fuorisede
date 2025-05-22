@@ -34,14 +34,11 @@
     section {
       margin-bottom: 2rem;
     }
-    ul {
+    ul, ol {
       padding-left: 1.5rem;
-    }
-    p {
       margin-bottom: 1rem;
     }
-    ol {
-      padding-left: 1.5rem;
+    p {
       margin-bottom: 1rem;
     }
     footer {
@@ -53,14 +50,18 @@
       padding-top: 1rem;
       text-align: center;
     }
-    a {
+    .nav-links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .nav-links a {
       display: inline-block;
-      margin-top: 1rem;
+      margin: 0.5rem 1rem;
       color: #f15a29;
       text-decoration: none;
       font-weight: bold;
     }
-    a:hover {
+    .nav-links a:hover {
       text-decoration: underline;
     }
   </style>
@@ -68,7 +69,7 @@
 <body>
   <header>
     <h1>Pasta alla Carbonara</h1>
-    <img src="carbonara.jpeg" alt="Pasta alla Carbonara" />
+    <img src="immagini/carbonara.jpeg" alt="Pasta alla Carbonara" />
   </header>
 
   <section>
@@ -87,34 +88,34 @@
     <h2>Procedimento</h2>
     <ol>
       <li>Accendere l'acqua della pasta.</li>
-      <li>Salarla una volta raggiunto il bollore e versare la pasta, lasciate cuocere e nel mentre pensate alla preparazione del guanciale e della carbo-crema, ricordandovi di girare la pasta.</li>
-      <li>Raggiunta la cottura desiderata della pasta, con l'ausilio di un colino versate la pasta nella padella con il guanciale.</li>
-      <li>Mescolate per bene e dopodiché spegnete il fuoco e lasciate riposare un paio di minuti per non stracciare la crema.</li>
-      <li>Trascorsi i 2 minuti aggiungete la crema e mescolate, ed infine servite.</li>
+      <li>Salarla una volta raggiunto il bollore e versare la pasta...</li>
+      <li>Raggiunta la cottura desiderata della pasta, scolarla nella padella col guanciale.</li>
+      <li>Mescolare, spegnere il fuoco e attendere 2 minuti.</li>
+      <li>Aggiungere la crema, mescolare e servire.</li>
     </ol>
   </section>
 
   <section>
-    <h2>Procedimento per la cottura del guanciale</h2>
+    <h2>Cottura del Guanciale</h2>
     <ol>
-      <li>Tagliare a striscioline il guanciale e metterlo in padella a freddo.</li>
-      <li>Accendere il fuoco medio-basso, poiché il guanciale deve "sudare" via il grasso in eccesso che useremo dopo per la carbo-crema.</li>
-      <li>A cottura ultimata spegnere il fuoco e attendere la cottura della pasta.</li>
+      <li>Tagliare il guanciale a striscioline e metterlo in padella a freddo.</li>
+      <li>Cuocere a fuoco medio-basso per far sciogliere il grasso.</li>
+      <li>Spegnere e attendere la pasta.</li>
     </ol>
   </section>
 
   <section>
-    <h2>Procedimento per la carbo-crema</h2>
+    <h2>Preparazione della Carbo-crema</h2>
     <ol>
-      <li>Porre in una ciotola/piatto il tuorlo con circa metà del pecorino e mescolare.</li>
-      <li>Aggiungere, dopo che se ne sarà sciolto a sufficienza, il grasso sprigionato dal guanciale in cottura per pastorizzare l'uovo, e mescolare.</li>
+      <li>Mescolare il tuorlo con metà del pecorino.</li>
+      <li>Aggiungere il grasso del guanciale per pastorizzare e mescolare.</li>
     </ol>
   </section>
-  
+
   <section>
     <h2>Conclusione</h2>
     <ol>
-      <li>Non vi resta che impiattare e godervi un buon piatto di carbonara</li>
+      <li>Non vi resta che impiattare e godervi un buon piatto di carbonara.</li>
     </ol>
   </section>
 
@@ -122,6 +123,9 @@
     <p>Buon appetito!</p>
   </footer>
 
-  <a href="index.html">&larr; Torna alla homepage</a>
+  <div class="nav-links">
+    <a href="primi.html">&larr; Torna all'elenco dei primi</a>
+    <a href="../index.html">🏠 Torna alla homepage</a>
+  </div>
 </body>
 </html>
