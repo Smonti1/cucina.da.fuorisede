@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cucina da Fuorisede</title>
     <style>
         body {
@@ -10,12 +10,12 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             background: #fffdfa;
             color: #333;
+            text-align: center;
         }
         header {
             background: #e4572e;
             color: #fff;
             padding: 2rem 1rem;
-            text-align: center;
             letter-spacing: 1px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
@@ -24,56 +24,49 @@
             font-size: 2.5rem;
             font-family: 'Pacifico', cursive, Arial, sans-serif;
         }
-        .galleria {
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        main {
+            padding: 3rem 1rem;
+        }
+        .categorie {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 2rem;
-            padding: 2rem 5vw;
+            max-width: 700px;
+            margin: 0 auto;
         }
-        .foto-ricetta {
-            background: #fff;
+        .categoria-link {
+            background: #e4572e;
+            color: white;
+            padding: 2rem 1rem;
             border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(228,87,46,0.08);
-            overflow: hidden;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 600;
+            box-shadow: 0 6px 16px rgba(228,87,46,0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
             display: flex;
-            flex-direction: column;
-            transition: transform 0.2s;
+            align-items: center;
+            justify-content: center;
+            height: 140px;
         }
-        .foto-ricetta:hover {
-            transform: translateY(-4px) scale(1.03);
-            box-shadow: 0 8px 24px rgba(228,87,46,0.14);
-        }
-        .foto-ricetta img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            display: block;
-        }
-        .foto-ricetta .descrizione {
-            padding: 1rem;
-        }
-        .foto-ricetta .descrizione h2 {
-            margin: 0 0 0.5rem 0;
-            font-size: 1.2rem;
-            color: #e4572e;
-            font-family: 'Segoe UI Semibold', Arial, sans-serif;
-        }
-        .foto-ricetta .descrizione p {
-            margin: 0;
-            font-size: 1rem;
-            color: #444;
+        .categoria-link:hover {
+            background-color: #d4451a;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 24px rgba(212,69,26,0.5);
         }
 
         @media (max-width: 600px) {
-            header {
-                padding: 1.2rem 0.5rem;
+            header h1 {
+                font-size: 2rem;
             }
-            .galleria {
-                padding: 1rem 2vw;
-                gap: 1rem;
-            }
-            .foto-ricetta img {
-                height: 130px;
+            .categoria-link {
+                height: 110px;
+                font-size: 1.3rem;
             }
         }
     </style>
@@ -84,25 +77,11 @@
         <p>Ricette semplici, veloci e gustose per chi vive lontano da casa</p>
     </header>
     <main>
-        <section class="galleria">
-            <a href="carbonara.html" style="text-decoration: none; color: inherit;">
-              <div class="foto-ricetta">
-                <img src="carbonara.jpeg" alt="Mezze maniche alla Carbonara">
-                <div class="descrizione">
-                  <h2>Pasta alla Carbonara</h2>
-                  <p>Un classico intramontabile della cucina romana. Facile, veloce, irresistibile!</p>
-                </div>
-              </div>
-            </a>
-
-            <div class="foto-ricetta">
-                <img src="tuafoto2.jpg" alt="Tiramisù veloce">
-                <div class="descrizione">
-                    <h2>Tiramisù veloce</h2>
-                    <p>Dolce cremoso senza cottura, pronto in pochi minuti anche per chi è alle prime armi.</p>
-                </div>
-            </div>
-            <!-- Aggiungi altre ricette qui -->
+        <section class="categorie">
+            <a href="antipasti.html" class="categoria-link">Antipasti</a>
+            <a href="primi.html" class="categoria-link">Primi</a>
+            <a href="secondi.html" class="categoria-link">Secondi</a>
+            <a href="dolci.html" class="categoria-link">Dolci</a>
         </section>
     </main>
 </body>
