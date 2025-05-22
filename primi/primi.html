@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Elenco Ricette Primi Piatti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 2rem auto;
+            background-color: #fffaf4;
+            color: #333;
+            padding: 0 1rem;
+            text-align: center;
+        }
+        h1 {
+            color: #e4572e;
+            margin-bottom: 2rem;
+        }
+        .ricetta {
+            margin-bottom: 2rem;
+        }
+        .ricetta a {
+            color: inherit;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .ricetta img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(228, 87, 46, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .ricetta img:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .ricetta-title {
+            margin-top: 0.5rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #e4572e;
+        }
+    </style>
 </head>
 <body>
     <h1>Ricette Primi Piatti</h1>
-    <ul>
-        <li><a href="carbonara.html">Carbonara</a></li>
-    </ul>
+
+    <div class="ricetta">
+        <a href="carbonara.html" title="Pasta alla Carbonara">
+            <img src="immagini/carbonara.jpeg" alt="Pasta alla Carbonara" />
+            <div class="ricetta-title">Carbonara</div>
+        </a>
+    </div>
+
 </body>
 </html>
