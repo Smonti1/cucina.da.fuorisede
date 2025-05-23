@@ -21,10 +21,10 @@
     }
 
     .elenco-ricette {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
+      justify-items: center;
     }
 
     .ricetta {
@@ -35,7 +35,8 @@
     .ricetta a {
       color: inherit;
       text-decoration: none;
-      display: inline-block;
+      display: block;
+      text-align: center;
     }
 
     .ricetta img {
@@ -99,7 +100,6 @@
         <div class="ricetta-title">Gnocchi alla carbonara</div>
       </a>
     </div>
-  </div>
     <div class="ricetta">
       <a href="spaghetti_tricolore.html" title="Spaghetti Tricolore">
         <img src="immagini/spaghetti_tricolore.jpeg" alt="Spaghetti Tricolore" />
