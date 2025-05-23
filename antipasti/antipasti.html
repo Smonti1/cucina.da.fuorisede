@@ -45,7 +45,17 @@
       transition: transform 0.3s ease;
     }
 
-    .ricetta img:hover {
+    /* Rotazione 90 gradi solo per bruschette */
+    .ricetta a[href="bruschette.html"] img {
+      transform: rotate(90deg);
+    }
+
+    .ricetta a[href="bruschette.html"] img:hover {
+      transform: rotate(90deg) scale(1.05);
+      cursor: pointer;
+    }
+
+    .ricetta img:hover:not([href="bruschette.html"] img) {
       transform: scale(1.05);
       cursor: pointer;
     }
@@ -73,14 +83,14 @@
   </style>
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTRES6XM8B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTRES6XM8B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-RTRES6XM8B');
-</script>
+    gtag('config', 'G-RTRES6XM8B');
+  </script>
   
 </head>
 <body>
@@ -104,8 +114,6 @@
         <div class="ricetta-title">Torta Salata</div>
       </a>
     </div>
-    
-    
   </div>
     
   <div class="nav-links">
