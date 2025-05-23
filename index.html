@@ -112,19 +112,20 @@
         </div>
 
         <div id="visit-counter-container" style="margin-top: 1.5rem; font-weight: 600; color: #e4572e;">
-          Visite al sito: <span id="visit-counter">...</span>
-        </div>
+  Visite al sito: <span id="visit-counter">...</span>
+</div>
 
-        <script>
-          fetch('https://api.countapi.xyz/hit/smonti1/cucina-da-fuorisede')
-            .then(res => res.json())
-            .then(data => {
-              document.getElementById('visit-counter').innerText = data.value;
-            })
-            .catch(() => {
-              document.getElementById('visit-counter').innerText = 'N/A';
-            });
-        </script>
+<script>
+  fetch('https://api.countapi.xyz/hit/smonti1/cucinadafuorisede')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('visit-counter').innerText = data.value;
+    })
+    .catch(() => {
+      document.getElementById('visit-counter').innerText = 'N/A';
+    });
+</script>
+
     </main>
 </body>
 </html>
