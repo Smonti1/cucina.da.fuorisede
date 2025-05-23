@@ -89,6 +89,16 @@
             }
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTRES6XM8B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RTRES6XM8B');
+</script>
+    
 </head>
 <body>
     <header>
@@ -110,21 +120,6 @@
         <div class="contatto">
             📩 <a href="mailto:contatto.cucina.da.fuorisede@gmail.com">contatto.cucina.da.fuorisede@gmail.com</a>
         </div>
-
-        <div id="visit-counter-container" style="margin-top: 1.5rem; font-weight: 600; color: #e4572e;">
-  Visite al sito: <span id="visit-counter">...</span>
-</div>
-
-<script>
-  fetch('https://api.countapi.xyz/hit/smonti1/cucinadafuorisede')
-    .then(res => res.json())
-    .then(data => {
-      document.getElementById('visit-counter').innerText = data.value;
-    })
-    .catch(() => {
-      document.getElementById('visit-counter').innerText = 'N/A';
-    });
-</script>
 
     </main>
 </body>
