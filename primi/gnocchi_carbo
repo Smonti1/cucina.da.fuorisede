@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gnocchi con Guanciale e Carbocrema</title>
+</head>
+<body>
 
+  <section>
+    <h2>Porzione per 2 persone</h2>
+    <h3>Ingredienti</h3>
+    <ul>
+      <li>500g patate</li>
+      <li>200g farina 00</li>
+      <li>100g guanciale</li>
+      <li>100g pecorino</li>
+      <li>3 uova</li>
+      <li>Sale e pepe q.b.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Guanciale</h2>
+    <ol>
+      <li>Mettere il guanciale a fuoco medio-basso.</li>
+      <li>Cuocere il guanciale mentre si prepara l’impasto degli gnocchi.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Preparazione della Carbocrema</h2>
+    <ol>
+      <li>In una ciotolina mettere 1 uovo intero e 1 tuorlo.</li>
+      <li>Aggiungere pepe e pecorino e mescolare fino a ottenere una crema.</li>
+      <li>Aggiungere un po’ del grasso del guanciale e mescolare ancora.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Impasto degli Gnocchi</h2>
+    <ol>
+      <li>Lavare bene le patate per eliminare la terra.</li>
+      <li>Cuocere le patate in acqua bollente per 40-45 minuti, finché non sono morbide (testare infilzandole con una forchetta).</li>
+      <li>Scolare e pelare le patate.</li>
+      <li>Schacciare le patate in una ciotola con una forchetta, cucchiaio o schiacciapatate.</li>
+      <li>Togliere eventuali grumi dall’impasto.</li>
+      <li>Aggiungere 175 g di farina e un uovo.</li>
+      <li>Impastare prima con un cucchiaio di legno, poi con le mani fino a ottenere un impasto omogeneo.</li>
+      <li>Dividere l’impasto in più parti (se lo spazio è limitato).</li>
+      <li>Stendere ogni parte sul piano di lavoro infarinato fino a uno spessore di circa mezzo cm.</li>
+      <li>Tagliare dei dischetti con un coppa-pasta o un bicchiere.</li>
+      <li>Mettere al centro di ogni dischetto una cucchiaiata di carbocrema.</li>
+      <li>Chiudere i dischetti a mezzaluna o come preferito.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Cottura</h2>
+    <ol>
+      <li>Portare l’acqua a bollore.</li>
+      <li>Cuocere gli gnocchi nell’acqua bollente.</li>
+      <li>Quando gli gnocchi salgono a galla, raccoglierli con un cucchiaio forato.</li>
+      <li>Metterli nella padella con il guanciale per insaporirli.</li>
+      <li>Impiattare a piacere.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>Buon appetito!</p>
+  </footer>
+
+</body>
+</html>
