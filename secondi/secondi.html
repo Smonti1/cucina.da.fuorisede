@@ -21,16 +21,15 @@
     }
 
     .elenco-ricette {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
+      justify-items: center;
     }
 
     .ricetta {
-      flex: 1 1 calc(33.333% - 2rem);
-      max-width: 300px;
-      box-sizing: border-box;
+      width: 100%;
+      max-width: 400px;
     }
 
     .ricetta a {
@@ -73,7 +72,7 @@
       text-decoration: underline;
     }
   </style>
-
+  
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTRES6XM8B"></script>
 <script>
