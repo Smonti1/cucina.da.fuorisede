@@ -1,190 +1,130 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cucina da Fuorisede</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #fffdfa;
-      color: #333;
-      text-align: center;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cucina da Fuorisede</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #fffdfa;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: #e4572e;
+            color: #fff;
+            padding: 2rem 1rem;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-family: 'Pacifico', cursive, Arial, sans-serif;
+        }
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        main {
+            padding: 3rem 1rem;
+        }
+        .categorie {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+        }
+        .categoria-link {
+            background: #e4572e;
+            color: white;
+            padding: 2rem 1rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 2.8rem; /* aumentato ancora */
+            font-weight: 600;
+            box-shadow: 0 6px 16px rgba(228,87,46,0.3);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 140px;
+        }
+        .categoria-link:hover {
+            background-color: #d4451a;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 24px rgba(212,69,26,0.5);
+        }
+        .descrizione {
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        .contatto {
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+        .contatto a {
+            color: #e4572e;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contatto a:hover {
+            text-decoration: underline;
+        }
 
-    header {
-      background: #e4572e;
-      color: #fff;
-      padding: 2rem 1rem;
-      letter-spacing: 1px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .categoria-link {
+                height: 110px;
+                font-size: 2.2rem; /* aumentato */
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTRES6XM8B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-family: 'Pacifico', cursive, Arial, sans-serif;
-    }
+  gtag('config', 'G-RTRES6XM8B');
+</script>
 
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.1rem;
-      font-weight: 500;
-    }
+<meta name="description" content="Scopri ricette facili e veloci per studenti fuorisede.">
+<meta name="author" content="Smonti1">
 
-    main {
-      padding: 3rem 1rem;
-    }
-
-    .filter-button {
-      background-color: #ffc107;
-      color: #2d2d2d;
-      font-size: 1rem;
-      font-weight: 600;
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.3s ease;
-    }
-
-    .filter-button:hover {
-      background-color: #ffb300;
-    }
-
-    .categorie {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 2rem;
-      max-width: 700px;
-      margin: 0 auto 2rem auto;
-    }
-
-    .categoria-link {
-      background: #e4572e;
-      color: white;
-      padding: 2rem 1rem;
-      border-radius: 12px;
-      text-decoration: none;
-      font-size: 2.8rem;
-      font-weight: 600;
-      box-shadow: 0 6px 16px rgba(228,87,46,0.3);
-      transition: background-color 0.3s ease, transform 0.2s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 140px;
-    }
-
-    .categoria-link:hover {
-      background-color: #d4451a;
-      transform: translateY(-5px);
-      box-shadow: 0 10px 24px rgba(212,69,26,0.5);
-    }
-
-    .descrizione {
-      max-width: 700px;
-      margin: 0 auto 2rem auto;
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #555;
-    }
-
-    .contatto {
-      margin-top: 1rem;
-      font-size: 1rem;
-    }
-
-    .contatto a {
-      color: #e4572e;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .contatto a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .categoria-link {
-        height: 110px;
-        font-size: 2.2rem;
-      }
-    }
-  </style>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTRES6XM8B"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RTRES6XM8B');
-  </script>
-
-  <meta name="description" content="Scopri ricette facili e veloci per studenti fuorisede.">
-  <meta name="author" content="Smonti1">
+    
 </head>
 <body>
-  <header>
-    <h1>Cucina da Fuorisede</h1>
-    <p>Ricette semplici, veloci e gustose per chi vive lontano da casa</p>
-  </header>
+    <header>
+        <h1>Cucina da Fuorisede</h1>
+        <p>Ricette semplici, veloci e gustose per chi vive lontano da casa</p>
+    </header>
+    <main>
+        <section class="categorie">
+            <a href="antipasti/antipasti.html" class="categoria-link">Antipasti</a>
+            <a href="primi/primi.html" class="categoria-link">Primi</a>
+            <a href="secondi/secondi.html" class="categoria-link">Secondi</a>
+            <a href="dolci/dolci.html" class="categoria-link">Dolci</a>
+        </section>
 
-  <main>
+        <div class="descrizione">
+            Non sono uno chef né ho mai studiato cucina, ma da sempre mi piace sperimentare ai fornelli. Qui condivido ricette semplici, nate dalla voglia di mangiare bene con quello che ho a disposizione. Cucino per passione e per fame, senza complicazioni ma con tanto gusto. <br>Benvenuti nella mia cucina da fuorisede!
+        </div>
 
-    <!-- Filtro a tendina -->
-    <div style="margin-bottom: 2rem;">
-      <label for="filtro-categoria" style="font-weight: 600; margin-right: 0.5rem;">Filtra per tipo:</label>
-      <select id="filtro-categoria" class="filter-button">
-        <option value="tutte">Tutte</option>
-        <option value="carne">Carne</option>
-        <option value="pesce">Pesce</option>
-        <option value="vegetariano">Vegetariano</option>
-        <option value="vegano">Vegano</option>
-      </select>
-    </div>
+        <div class="contatto">
+            📩 <a href="mailto:contatto.cucina.da.fuorisede@gmail.com">contatto.cucina.da.fuorisede@gmail.com</a>
+        </div>
 
-    <!-- Sezione Categorie -->
-    <section class="categorie">
-      <a href="antipasti/antipasti.html" class="categoria-link" data-categoria="vegetariano">Antipasti</a>
-      <a href="primi/primi.html" class="categoria-link" data-categoria="carne">Primi</a>
-      <a href="secondi/secondi.html" class="categoria-link" data-categoria="pesce">Secondi</a>
-      <a href="dolci/dolci.html" class="categoria-link" data-categoria="vegano">Dolci</a>
-    </section>
-
-    <!-- Descrizione -->
-    <div class="descrizione">
-      Non sono uno chef né ho mai studiato cucina, ma da sempre mi piace sperimentare ai fornelli. Qui condivido ricette semplici, nate dalla voglia di mangiare bene con quello che ho a disposizione. Cucino per passione e per fame, senza complicazioni ma con tanto gusto. <br>Benvenuti nella mia cucina da fuorisede!
-    </div>
-
-    <!-- Contatto -->
-    <div class="contatto">
-      📩 <a href="mailto:contatto.cucina.da.fuorisede@gmail.com">contatto.cucina.da.fuorisede@gmail.com</a>
-    </div>
-  </main>
-
-  <!-- Script per filtro -->
-  <script>
-    document.getElementById('filtro-categoria').addEventListener('change', function () {
-      const selezione = this.value;
-      const categorie = document.querySelectorAll('.categoria-link');
-
-      categorie.forEach(link => {
-        const cat = link.getAttribute('data-categoria');
-        if (selezione === 'tutte' || cat === selezione) {
-          link.style.display = 'flex';
-        } else {
-          link.style.display = 'none';
-        }
-      });
-    });
-  </script>
+    </main>
 </body>
 </html>
